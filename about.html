@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Cameron Cares Initiative</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="https://assets.cammy.dev/camcares/assets/care%20clover.png">
+    <link rel="stylesheet" href="/styles/main.css">
+    <link rel="stylesheet" href="/styles/about.css">
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <a href="/">
+                <img src="https://assets.cammy.dev/camcares/assets/care%20clover.png" class="logo">  
+            </a>
+             <nav>
+                <ul id="menuList">
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/about">About</a></li>
+                    <a href="/initiatives">
+                        <button>Iniatiatives</button>
+                    </a>
+                </ul>
+            </nav>
+            <img src="https://assets.cammy.dev/camcares/icons/menu%20bar.png" class="menu-icon" onclick="togglemenu()">
+        </div>
+        <div id="mission" class="about-hero">
+            <h1><strong>The Cameron Cares Initiative is a student based goal assessment 
+                and solutions finding organization for the future students of 
+                Centennial High School</strong></h1>
+        </div>
+        <div id="process" class="process">
+            <h1 class="process-hero-text" >Our Process -</h1>
+            <div class="step-1">
+                <div class="step-l-1">
+                    <h1 class="process-h1">Propose</h1>
+                    <p class="process-p"> Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                         Doloremque accusamus ea dignissimos cupiditate voluptates 
+                         rerum consequuntur error, veniam nihil, aliquid et! Beatae 
+                         nam vel sequi architecto fugit repudiandae nesciunt quae.</p>
+                </div>
+                <div class="step-r-1">
+                    <h1>1</h1>
+                </div>
+            </div>
+            <div class="step-2">
+                <div class="step-l-2">
+                    <h1 class="process-h1">Propose</h1>
+                    <p class="process-p"> Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                         Doloremque accusamus ea dignissimos cupiditate voluptates 
+                         rerum consequuntur error, veniam nihil, aliquid et! Beatae 
+                         nam vel sequi architecto fugit repudiandae nesciunt quae.</p>
+                </div>
+                <div class="step-r-2">
+                    <h1>2</h1>
+                </div>
+            </div>
+            <div class="step-3">
+                <div class="step-l-3">
+                    <h1 class="process-h1">Propose</h1>
+                    <p class="process-p"> Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                         Doloremque accusamus ea dignissimos cupiditate voluptates 
+                         rerum consequuntur error, veniam nihil, aliquid et! Beatae 
+                         nam vel sequi architecto fugit repudiandae nesciunt quae.</p>
+                </div>
+                <div class="step-r-3">
+                    <h1>3</h1>
+                </div>
+            </div>
+            <div class="step-4">
+                <div class="step-l-4">
+                    <h1 class="process-h1">Propose</h1>
+                    <p class="process-p"> Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                         Doloremque accusamus ea dignissimos cupiditate voluptates 
+                         rerum consequuntur error, veniam nihil, aliquid et! Beatae 
+                         nam vel sequi architecto fugit repudiandae nesciunt quae.</p>
+                </div>
+                <div class="step-r-4">
+                    <h1>4</h1>
+                </div>
+            </div>
+            <div class="step-5">
+                <div class="step-l-5">
+                    <h1 class="process-h1">Propose</h1>
+                    <p class="process-p"> Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                         Doloremque accusamus ea dignissimos cupiditate voluptates 
+                         rerum consequuntur error, veniam nihil, aliquid et! Beatae 
+                         nam vel sequi architecto fugit repudiandae nesciunt quae.</p>
+                </div>
+                <div class="step-r-5">
+                    <h1>5</h1>
+                </div>
+            </div>
+        </div>
+        <div class="inquire-box">
+            <h1>Submit Inquiry</h1>
+            <form onsubmit="sendEmail(); reset(); return false;">
+                <div class="input-group">
+                    <input type="text" id="name" required>
+                    <label>Name</label>
+                </div>
+                <div class="input-group">
+                    <input type="text" id="email" required>
+                    <label>Email</label>
+                </div>
+                <div class="input-group">
+                    <textarea id="message" rows="4" required ></textarea>
+                    <label>How can I help?</label>
+                </div>
+                <div class="secondary-btn">
+                    <a href="/submit-successfully">
+                        <button class="secondary-btn">Submit</button>
+                    </a>
+                </div>
+            </form>
+        </div>
+    </div>
+    <br>
+    <footer>
+        <div class="footer">
+            <a href="/">
+                <img src="https://assets.cammy.dev/camcares/assets/cameron%20cares.png" class="footer-logo">  
+            </a>
+             <div class="footer-nav">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/about">About</a></li>
+                    <li><a href="/initiatives">Initiatives</a></li>
+                </ul>
+             </div>
+    </footer>
+    <script>
+        var menuList = document.getElementById("menuList");
+    
+        menuList.style.maxHeight = "0px";
+    
+        function togglemenu(){
+    
+            if(menuList.style.maxHeight == "0px")
+                {
+                    menuList.style.maxHeight = "150px";
+                }
+            else
+                {
+                    menuList.style.maxHeight = "0px"
+                }
+        }
+    </script>
+    <script>src="https://smtpjs.com/v3/smtp.js"</script>
+    <script>
+        function sendEmail(){
+            Email.send({
+                Host : "smtp.elasticemail.com",
+                Username : "username",
+                Password : "password",
+                To : 'them@website.com',
+                From : "you@isp.com",
+                Subject : "This is the subject",
+                Body : "And this is the body"
+            }).then(
+            message => alert(message)
+            );
+        }
+    </script>
+</body>
+</html>

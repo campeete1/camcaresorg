@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project 00 - Cam Cares Initiative</title>
+    <link rel="shortcut icon" href="https://assets.cammy.dev/camcares/assets/care%20clover.png">
+    <link rel="stylesheet" href="/styles/main.css">
+    <link rel="stylesheet" href="/styles/initiative.css">
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <a href="/">
+                <img src="https://assets.cammy.dev/camcares/assets/care%20clover.png" class="logo">  
+            </a>
+            <nav>
+                <ul id="menuList">
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/about">About</a></li>
+                    <a href="/initiatives">
+                        <button>Initiatives</button>
+                    </a>
+                </ul>
+            </nav>
+            <img src="https://assets.cammy.dev/camcares/icons/menu%20bar.png" class="menu-icon" onclick="togglemenu()">
+        </div>
+    </div>
+    <div class="proposal-contanier">
+        <div class="back-btn">
+            <a href="/initiatives">
+                <img src="/assets/arrow.svg" class="arrow"> Back
+            </a>
+        </div>
+        <h1>Charger Futures Vision & Plan - Initiative</h1>
+        <hr>
+        <br>
+        <p>This detailed draft consists of three parts. Part one of this draft will be known as Proposal 1122-1A, part two will be 
+            known as Proposal 1122-1B, and part three will be known as Proposal 1122-1C. Collectively these three parts make up the 
+            <strong><em>Charger Futures Vision & Plan</em></strong>
+        </p>
+        <p>
+            In part one of the <strong><em>Charger Futures Vision & Plan</em></strong>, I have selected a set of problems seen throughout our school that 
+            I believe can be changed. These problems are the lack of a modern visual announcement system or process, lack of 
+            organization of events, lack of cooperation between student-led organizations, a non-accessible centralized calendar
+            with event dates and times, and the lack of a centralized student-led government and union.
+        </p>
+        <p>
+            Phasellus vitae sollicitudin enim. Donec fringilla feugiat neque in condimentum. Aenean fringilla magna a lorem consequat, 
+            sed ornare nibh tincidunt. Phasellus felis turpis, feugiat vitae interdum aliquam, consequat eget felis. Nam sapien erat, 
+            pulvinar quis aliquet in, placerat in ex. Integer mattis fringilla molestie. Vestibulum aliquam sit amet velit sit amet 
+            pellentesque. Sed semper iaculis rhoncus. Sed nulla enim, aliquet ac sollicitudin nec, placerat ac purus. Aliquam erat volutpat.
+        </p>
+        <p>
+            In the third and final part, non personally identifiable student data is collected and analyzed. The data collected from
+            students consists of students' opinions on my solution to the problems as well as what problems they’d like to see addressed 
+            with their possible solutions.
+        </p>
+        <p>
+            For more details, please read the full proposal by clicking the button below.
+        </p>
+        <br>
+        <a href="https://assets.cammy.dev/camcares/docs/coc23">
+            <button>Read Initiative</button>
+        </a>
+    </ul>
+    </div>
+    <br>
+    <footer>
+        <div class="footer">
+            <a href="/">
+                <img src="https://assets.cammy.dev/camcares/assets/cameron%20cares.png" class="footer-logo">  
+            </a>
+             <div class="footer-nav">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/about">About</a></li>
+                    <li><a href="/contact">Contact</a></li>
+                    <li><a href="/initiatives">Initiatives</a></li>
+                </ul>
+             </div>
+    </footer>
+        <script>
+            var menuList = document.getElementById("menuList");
+        
+            menuList.style.maxHeight = "0px";
+        
+            function togglemenu(){
+        
+                if(menuList.style.maxHeight == "0px")
+                    {
+                        menuList.style.maxHeight = "150px";
+                    }
+                else
+                    {
+                        menuList.style.maxHeight = "0px"
+                    }
+            }
+        </script>
+</body>
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Launch Initiative- Cam Cares Initiative</title>
+    <link rel="shortcut icon" href="https://assets.cammy.dev/camcares/assets/care%20clover.png">
+    <link rel="stylesheet" href="/styles/main.css">
+    <link rel="stylesheet" href="/styles/launch.css">
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <a href="/">
+                <img src="https://assets.cammy.dev/camcares/assets/care%20clover.png" class="logo">  
+            </a>
+             <nav>
+                <ul id="menuList">
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/about">About</a></li>
+                    <a href="/initiatives">
+                        <button>Iniatiatives</button>
+                    </a>
+                </ul>
+            </nav>
+            <img src="https://assets.cammy.dev/camcares/icons/menu%20bar.png" class="menu-icon" onclick="togglemenu()">
+        </div>
+        <div class="inquire-box">
+            <div class="back-btn">
+                <a href="/initiatives">
+                    <img src="/assets/arrow.svg" class="arrow"> Back
+                </a>
+            </div>
+            <h1>Launch Initiative</h1>
+            <form action="https://getform.io/f/979cd3e9-a8d6-4535-9938-e75b83bc2e63" method="POST"; reset(); return false;>
+                <div class="input-group">
+                    <input type="text" id="name" name="name" required>
+                    <label>Name</label>
+                </div>
+                <div class="input-group">
+                    <input type="email" id="email" name="email" required>
+                    <label>Email</label>
+                </div>
+                <div class="input-group">
+                    <textarea type="text" id="message" name="message" rows="4" required ></textarea>
+                    <label>How can I help?</label>
+                </div>
+                <div class="secondary-btn">
+                    <a href="/initiatives/launch/submit-successfully.html">
+                        <button class="secondary-btn">Submit</button>
+                    </a>
+                </div>
+            </form>
+        </div>
+    </div>
+    <br>
+    <footer>
+        <div class="footer">
+            <a href="/">
+                <img src="https://assets.cammy.dev/camcares/assets/cameron%20cares.png" class="footer-logo">  
+            </a>
+             <div class="footer-nav">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/about">About</a></li>
+                    <li><a href="/initiatives">Initiatives</a></li>
+                </ul>
+             </div>
+    </footer>
+    <script>
+        var menuList = document.getElementById("menuList");
+    
+        menuList.style.maxHeight = "0px";
+    
+        function togglemenu(){
+    
+            if(menuList.style.maxHeight == "0px")
+                {
+                    menuList.style.maxHeight = "150px";
+                }
+            else
+                {
+                    menuList.style.maxHeight = "0px"
+                }
+        }
+    </script>
+    <script>src="https://smtpjs.com/v3/smtp.js"</script>
+    <script>
+        function sendEmail(){
+            Email.send({
+                Host : "smtp.elasticemail.com",
+                Username : "username",
+                Password : "password",
+                To : 'them@website.com',
+                From : document. getElementById("email"). value,
+                Subject : "New Initiative",
+                Body : "Email: " + document.getElementById("email").value
+                + "<br> Name: " + document.getElementById("name").value
+                + "<br> Message: " + document.getElementById("message").value
+                
+            }).then(
+            message => alert("Sent Successfully")
+            );
+        }
+    </script>
+</body>
+</html>

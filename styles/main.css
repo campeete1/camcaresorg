@@ -1,0 +1,327 @@
+*{
+    font-family: 'Roboto', sans-serif;
+    background-color: #1d1d1d;
+    color: white;
+}
+.container{
+    width: 100%;
+    padding-left: 8%;
+    padding-right: 8%;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.navbar{
+    width: 100%;
+    display: flex;
+    align-self: center;
+    align-items: center;
+}
+.logo{
+    width: 75px;
+    cursor: pointer;
+    margin-top: 32px;
+    position: relative;
+}
+.menu-icon{
+    width: 25px;
+    cursor: pointer;
+    display: none;
+}
+nav{
+    flex: 1;
+    text-align: right;
+    align-items: center;
+    margin-top: -15px;
+}
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    margin-right: 30px;
+
+}
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+}
+nav ul li a:hover{
+    color: #c619ff;
+}
+button{
+    border-radius: 25px;
+    margin-right: 30px;
+    padding: 15px 30px;
+    background-color: #c619ff;
+    color: white;
+    border: none;
+    font-size: 16px;
+}
+button a{
+    text-decoration: none;
+    text-emphasis-style: none;
+    background-color: #c619ff;
+}
+button:hover{
+    background-color: white;
+    color: #c619ff;
+}
+.hero{
+    display: grid;
+    margin-top: 50px;
+}
+.hero-video{
+    max-width: 80vw;
+    justify-self: center;
+    border-radius: 35px;
+}
+.recent-initiatitives{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 50px 0;
+    gap: 75px;
+    padding: 10px;
+    display: flex;
+    gap: 25px;
+    border-radius: 25px;
+    align-items: center;
+    justify-content: space-between;
+}
+.col-1{
+    flex-basis: 50%;
+    position: relative;
+    margin-left: 50px;
+    margin-right: 50px; 
+    background: center;
+}
+
+.col-2 {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-right: 50px;
+    margin-left: 50px;
+    background: center;
+}
+.initiatives-h1 strong {
+    color: #C619FF;   
+}
+.initiatives-h1 {
+    background: center;
+    font-size: 35px;
+    font-weight: bold;
+}
+.initiatives-p {
+    background: center;
+    font-weight: 500;
+}
+.read-more-cta{
+    background: center;
+}
+.read-more-cta button:hover{
+    background-color: white;
+}
+.cta-hero {
+    font-size: 14px;
+    margin-right: 0px;
+}
+.initiative-hero-img{
+    border-radius: 25px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    max-width: 300px;
+}
+.initiative-archive{
+    display: flex;
+    text-align: center;
+    gap: 25px;
+}
+.initiative-archive{
+    text-align: center;
+}
+.initiative-img{
+    max-width: 200px;
+    border-radius: 35px;
+    margin-top: 25px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.initiative-archive-p{
+    font-size: 18px;
+    background: center;
+}
+.initiative-archive-p strong{
+    background: center;
+    color: black;
+}
+.initiative-archive-1, .initiative-archive-2, .launch-initiative{
+    background-color: white;
+    padding: 25px;
+    border-radius: 35px;
+}
+.launch-initiative, .initiative-archive{
+    min-width: 240px;
+}
+.launch-initiative-h1{
+    text-align: start;
+    /* margin-top: 35%; */
+}
+.launch-initiative-h1 strong{
+    text-align: start;
+    color: black;
+    background: center;
+}
+.launch-initiative-p{
+    color: black;
+    text-align: start;
+}
+.launch-initiative-h1, .launch-initiative-p{
+    background: center;
+}
+.launch-initiative{
+    border-style: solid ;
+    border-color: #C619FF;
+    border-width: 10px;
+    align-items: center;
+}
+.launch-now-cta {
+    background: center;
+    text-align: start;
+}
+.footer{
+    width: 100%;
+    display: flex;
+    align-self: center;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.footer-nav{
+    flex: 1;
+    text-align: right;
+    align-items: center;
+}
+.footer-nav ul li {
+    list-style: none;
+    display: inline-block;
+    margin-right: 30px;
+}
+.footer-nav ul li a {
+    text-decoration: none;
+    font-size: 16px;
+}
+.footer-nav ul li a:hover{
+    color: #c619ff;
+}
+.footer-logo{
+    width: 275px;
+    cursor: pointer;
+    position: relative;
+    margin-top: 0px;
+}
+.footer-nav > ul:nth-child(1) {
+    padding-left: 10px;
+}
+.launch-now-cta a {
+    background: center;
+}
+.cta-launch:hover{
+    color: #c619ff;
+    background: black;
+}
+.initiative-archive-1, .initiative-archive-2{
+    display: none;
+}
+
+/* Element | http://127.0.0.1:5500/ */
+
+.launch-initiative {
+    width: 100vw;
+  }
+  
+  /* main.css | http://127.0.0.1:5500/styles/main.css */
+  
+  .launch-initiative-h1 {
+    /* margin-top: 35%; */
+  }
+  
+
+@media only screen and (max-width:1025px){
+    .logo {
+    margin-top: 10px;
+    }
+
+    .navbar{
+        margin-top: 25px;
+    }
+    nav{
+        text-align: center;
+    }
+    nav ul{
+        width: 100%;
+        background: #1d1d1d;
+        filter: drop-shadow(150%);
+        position:absolute;
+        top: 100px;
+        right: 0;
+        z-index: 2;
+        padding-top: 30px;
+        overflow: hidden;
+    }
+    nav ul li button{
+        display: block;
+    }
+    nav ul li a{
+        color: white;
+        margin-top: 30px;
+        margin-bottom: 20px;
+    }
+    li a{
+        background-color: #1d1d1d;
+    }
+    button{
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    button:hover{
+        color:#c619ff;
+        background-color: white;
+    }
+    .menu-icon{
+        display: block;
+    }
+    #menuList{
+        overflow: hidden;
+        transition:0.5s;
+    }
+    .recent-initiatitives{
+        flex-direction:column-reverse ;
+        margin: 10px 0;
+    }
+    .initiatives-h1 {
+        text-align: center;
+    }
+
+    .initiatives-p {
+        text-align: center;
+    }
+
+    .read-more-cta {
+        text-align: center;
+    }
+    .col-1{
+        margin-left: 25px;
+        margin-right: 25px;
+    }
+    .initiative-archive{
+        flex-direction: column;
+    }
+    .footer{
+        flex-direction: column-reverse;
+        margin-bottom: 50px;
+    }
+
+    .launch-initiative {
+        width: auto;
+      }
+}

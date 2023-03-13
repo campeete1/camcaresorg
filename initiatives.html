@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Initiatives - Cameron Cares Initiative</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="https://assets.cammy.dev/camcares/assets/care%20clover.png">
+    <link rel="stylesheet" href="/styles/main.css">
+    <link rel="stylesheet" href="/styles/initiatives.css">
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <a href="/">
+                <img src="https://assets.cammy.dev/camcares/assets/care%20clover.png" class="logo">  
+            </a>
+             <nav>
+                <ul id="menuList">
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/about">About</a></li>
+                    <a href="/initiatives">
+                        <button>Iniatiatives</button>
+                    </a>
+                </ul>
+            </nav>
+            <img src="https://assets.cammy.dev/camcares/icons/menu%20bar.png" class="menu-icon" onclick="togglemenu()">
+        </div>
+        <div class="initiatives">
+            <div class="launch-initiative">
+                <h1 class="launch-initiative-h1"><strong>Launch new initiatives</strong></h1>
+                <p class="launch-initiative-p">Lorem ipsum dolor sit amet, consectetur 
+                    adipiscing elit. Curabitur ut turpis volutpat.</p>
+                    <div class="launch-now-cta">
+                        <a href="/initiatives/launch-initiative">
+                        <button class="cta-launch" type="button">Launch Now</button> 
+                        </a>
+                    </div>
+            </div>
+            <div class="initiative-archive-1">
+                <img class="initiative-img" src="https://assets.cammy.dev/cameron.dev/assets/cameron.jpg">
+                <p class="initiative-archive-p"><strong>Charger Futures Vision & Plan</strong></p>
+            </div>
+            <div class="initiative-archive-2">
+                <img class="initiative-img" src="https://assets.cammy.dev/cameron.dev/assets/cameron.jpg">
+                <p class="initiative-archive-p"><strong>Charger Futures Vision & Plan</strong></p>
+            </div>
+        </div>
+    </div>
+    <br>
+    <footer>
+        <div class="footer">
+            <a href="/">
+                <img src="https://assets.cammy.dev/camcares/assets/cameron%20cares.png" class="footer-logo">  
+            </a>
+             <div class="footer-nav">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/about">About</a></li>
+                    <li><a href="/initiatives">Initiatives</a></li>
+                </ul>
+             </div>
+    </footer>
+    <script>
+        var menuList = document.getElementById("menuList");
+    
+        menuList.style.maxHeight = "0px";
+    
+        function togglemenu(){
+    
+            if(menuList.style.maxHeight == "0px")
+                {
+                    menuList.style.maxHeight = "150px";
+                }
+            else
+                {
+                    menuList.style.maxHeight = "0px"
+                }
+        }
+    </script>
+</body>
+</html>

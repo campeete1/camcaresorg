@@ -1,0 +1,156 @@
+.about-hero{
+    display: block;
+    background-color: white;
+    border-radius: 35px;
+    padding: 25px;
+    margin: 25px;
+}
+.about-hero h1 strong{
+    font-size: 50px;
+    color: black;
+    background: center;
+}
+.about-hero h1{
+    text-align: center;
+    background: center;
+}
+.process {
+    padding-left: 5vw;
+    padding-right: 5vw;
+}
+.process-h1, .process-p{
+    margin-left: 25px;
+    margin-right: 25px;
+    color: black;
+}
+.process-hero-text{
+    font-size: 120px;
+    color: #c619ff;
+    margin-bottom: -25px;
+}
+.step-1, .step-2, .step-3, .step-4, .step-5{
+    display: flex;
+}
+.step-l-1, .step-l-2, .step-l-3, .step-l-4, .step-l-5{
+    background: white;
+    padding: 25px;
+    margin-top: 45px;
+    margin-left: 25px;
+    margin-right: 25px;
+    border-radius: 35px;
+    align-self: center;
+}
+.step-l-1 h1, .step-l-2 h1, .step-l-3 h1, .step-l-4 h1, .step-l-5 h1{
+    background: center;
+}
+.step-l-1 p, .step-l-2 p, .step-l-3 p, .step-l-4 p, .step-l-5 p{
+    background: center;
+}
+.step-r-1, .step-r-3, .step-r-5{
+    margin-left: 45px;
+}
+.step-r-2, .step-r-4{
+    margin-right: 45px;
+}
+.step-2, .step-4{
+    flex-direction: row-reverse;
+}
+.step-r-1 h1, .step-r-2 h1, .step-r-3 h1, .step-r-4 h1, .step-r-5 h1{
+    color: white;
+    font-size: 152px;
+}
+form{
+    display: grid;
+    gap: 25px;
+    align-items: center;
+    justify-content: center;
+}
+.inquire-box{
+    display: grid;
+    margin-top: 50px;
+}
+.inquire-box h1{
+    text-align: center;
+}
+.input-group{
+    position: relative;
+}
+input{
+    border: solid 1.5px white;
+    border-radius: 1rem;
+    background: none;
+    padding: 1rem;
+    font-size: 1rem;
+    color: white;
+    width: 350px;
+    transition: 150ms cubic-bezier(0.4, 0, 0,2, 1);
+}
+textarea{
+    resize: none;
+    border: solid 1.5px white;
+    border-radius: 1rem;
+    background: none;
+    padding: 1rem;
+    font-size: 1rem;
+    color: white;
+    width: 350px;
+    transition: 150ms cubic-bezier(0.4, 0, 0,2, 1);
+}
+label{
+    position: absolute;
+    left: 16px;
+    color: white;
+    pointer-events: none;
+    transform: translateY(1rem);
+    transition: 150ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+input:focus, textarea:focus{
+    outline: none;
+    border: 1.5px solid #c619ff;
+}
+input:focus + label, textarea:focus + label {
+    transform: translateY(-50%) scale(0.8);
+    padding: 0 0.2em;
+    color: #c619ff;
+}
+input:valid + label, textarea:valid + label {
+    transform: translateY(-50%) scale(0.8);
+    padding: 0 0.2em;
+    color: #c619ff;
+}
+div.secondary-btn {
+    margin-top: 25px;
+    justify-self: center;
+}
+@media only screen and (max-width:900px){
+    .about-hero{
+        margin-top: 25px;
+    }
+    .about-hero h1 strong {
+        font-size: 20px;
+    }
+    .process {
+        padding-left: 0vw;
+        padding-right: 0vw;
+    }
+    .process-hero-text{
+        margin-bottom: 5px;
+        font-size: 80px;
+    }
+    .step-1, .step-2, .step-3, .step-4, .step-5{
+        flex-direction: column-reverse;
+    }
+    .step-r-1 h1, .step-r-2 h1, .step-r-3 h1, .step-r-4 h1, .step-r-5 h1 {
+        margin-top: -25px;
+        background: center;
+        margin-bottom: -25px;
+        text-align: end;
+       }
+       .step-r-1, .step-r-2, .step-r-3, .step-r-4, .step-r-5{
+        margin-right: 45px;
+        margin-left: 0px;
+       }
+       .form{
+        margin-top: 75px;
+    }
+}

@@ -1,0 +1,17 @@
+.proposal-contanier {
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 50px;
+}
+.arrow {
+    height: 12px;
+}
+.back-btn a {
+    text-decoration: none;
+}
+.back-btn a:hover{
+    color: #c619ff;
+}
+.back-btn img:hover{
+    color: #c619ff;
+}

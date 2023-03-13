@@ -1,0 +1,89 @@
+form{
+    display: grid;
+    gap: 25px;
+    align-items: center;
+    justify-content: center;
+}
+.inquire-box{
+    display: grid;
+    margin-top: 50px;
+}
+.inquire-box h1{
+    text-align: center;
+}
+.input-group{
+    position: relative;
+
+}
+input{
+    border: solid 1.5px white;
+    border-radius: 1rem;
+    background: none;
+    padding: 1rem;
+    font-size: 1rem;
+    color: white;
+    width: 350px;
+    transition: 150ms cubic-bezier(0.4, 0, 0,2, 1);
+}
+textarea{
+    resize: none;
+    border: solid 1.5px white;
+    border-radius: 1rem;
+    background: none;
+    padding: 1rem;
+    font-size: 1rem;
+    color: white;
+    width: 350px;
+    transition: 150ms cubic-bezier(0.4, 0, 0,2, 1);
+}
+label{
+    position: absolute;
+    left: 16px;
+    color: white;
+    pointer-events: none;
+    transform: translateY(1rem);
+    transition: 150ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+input:focus, textarea:focus{
+    outline: none;
+    border: 1.5px solid #C619FF;
+}
+input:focus + label, textarea:focus + label {
+    transform: translateY(-50%) scale(0.8);
+    padding: 0 0.2em;
+    color: #C619FF;
+}
+input:valid + label, textarea:valid + label {
+    transform: translateY(-50%) scale(0.8);
+    padding: 0 0.2em;
+    color: #C619FF;
+}
+
+div.secondary-btn {
+    margin-top: 25px;
+    justify-self: center;
+}
+.arrow {
+    height: 12px;
+}
+.new-arrow:hover{
+    fill: #C619FF;
+}
+.back-btn a {
+    text-decoration: none;
+    margin-top: 50px;
+}
+.back-btn a:hover{
+    color: #c619ff;
+}
+.arrow img:hover{
+    fill: #c619ff;
+}
+@media only screen and (max-width:1025px){
+    .form{
+        margin-top: 75px;
+    }
+    .back-btn a {
+        margin-top: 100px;
+    }
+}

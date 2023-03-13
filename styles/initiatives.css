@@ -1,0 +1,63 @@
+.initiatives{
+    display: flex;
+    text-align: center;
+    gap: 25px;
+}
+.initiatives{
+    text-align: center;
+}
+.initiative-img{
+    max-width: 200px;
+    border-radius: 35px;
+    margin-top: 25px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.initiative-archive-p{
+    font-size: 18px;
+    background: center;
+}
+.initiative-archive-p strong{
+    background: center;
+    color: black;
+}
+.initiative-archive-1, .initiative-archive-2, .launch-initiative{
+    background-color: white;
+    padding: 25px;
+    border-radius: 35px;
+}
+.launch-initiative, .initiatives{
+    min-width: 240px;
+}
+.launch-initiative-h1{
+    text-align: start;
+    margin-top: 35%;
+}
+.launch-initiative-h1 strong{
+    text-align: start;
+    color: black;
+    background: center;
+}
+.launch-initiative-p{
+    color: black;
+    text-align: start;
+}
+.launch-initiative-h1, .launch-initiative-p{
+    background: center;
+}
+.launch-initiative{
+    border-style: solid ;
+    border-color: #C619FF;
+    border-width: 10px;
+    align-items: center;
+}
+.launch-now-cta {
+    background: center;
+    text-align: start;
+}
+@media only screen and (max-width:1025px){
+    .initiatives{
+        margin-top: 25px;
+        flex-direction: column;
+    }
+}
