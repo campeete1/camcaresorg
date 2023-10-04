@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barbie Day Response Poll - Cameron Cares Initative</title>
+    <link rel="stylesheet" href="/styles/barbie.css">
+</head>
+<body>
+    <div class="poll-format">
+        <div class="poll-format">
+        </div>
+        <h1>Barbie Day Response Poll</h1>
+            <script type="text/javascript"> var submitted=false</script>
+            <script>
+            // Prevent Double Submits
+            document.querySelectorAll('form').forEach(form => {
+            form.addEventListener('submit', (e) => {
+            // Prevent if already submitting
+            if (form.classList.contains('is-submitting')) {
+            e.preventDefault();
+            console.info('Successive submit suppressed');
+            }
+      
+      // Add a visual indicator to show the user it is submitting
+      form.classList.add('is-submitting');
+    });
+  });
+  
+  // Extra snippet here to also prevent form submissions the first submit
+  // as a viewer of this demo would otherwise be guided to outside of CodePen …
+  document.querySelectorAll('form').forEach(form => {
+    form.addEventListener('submit', e => {
+      e.preventDefault();
+    });
+  });
+</script>
+            <iframe name="hiddenConfirm" id="hiddenConfirm" style="display: none;" onload="if(submitted){window.location='/polls/submitted.html';}"></iframe>
+            <form action="https://docs.google.com/forms/d/e/1FAIpQLSdxhmwaf7nwP4JS8C_yhYB-rFkJtpapSYBw57WebWABPJzbUQ/formResponse" method="POST" target="hiddenConfirm" onsubmit="submitted=true">
+            <div class="contact-information">
+                <div class="input-group">
+                    <input class="input-group_input" type="text" name="entry.1604217663" id="" placeholder="Name" required/>
+                    <div class="input-group_line"></div>
+                </div>
+                <div class="input-group">
+                    <input class="input-group_input" type="email" name="entry.594392613" id="" placeholder="Email" required/>
+                    <div class="input-group_line"></div>
+                </div>
+            </div>
+            <div class="poll-data-q1">
+                <span>Did you enjoy Barbie Day?</span>
+                <label for="Yes">
+                    <input type="radio" name="entry.743941371" id="Yes" value="Yes"/>
+                    <span>Yes</span>
+                </label>
+                <label for="No">
+                    <input type="radio" name="entry.743941371" id="No" value="No"/>
+                    <span>No</span>
+                </label>
+            </div>
+            <div class="poll-data-q2">
+                <span>Did it feel like there was school spirit in the air?</span>
+                <label for="Yes">
+                    <input type="radio" name="entry.388443839" id="Yes" value="Yes"/>
+                    <span>Yes</span>
+                </label>
+                <label for="No">
+                    <input type="radio" name="entry.388443839" id="No" value="No"/>
+                    <span>No</span>
+                </label>
+            </div>
+            <div class="poll-data-q3">
+                <span>Did you stop by and take pictures in the Barbie Box?</span>
+                <label for="Yes">
+                    <input type="radio" name="entry.641897408" id="Yes" value="Yes"/>
+                    <span>Yes</span>
+                </label>
+                <label for="No">
+                    <input type="radio" name="entry.641897408" id="No" value="No"/>
+                    <span>No</span>
+                </label>
+            </div>
+            <div class="input-group">
+                    <input class="input-group_input" type="text" name="entry.312042162" id="" placeholder="If no, what prevented you from doing so?"/>
+                    <div class="input-group_line"></div>
+                </div>
+                <div class="input-group">
+                    <input class="input-group_input" type="text" name="entry.1905801199" id="" placeholder="If you have any thoughts or suggestions, please share them here?"/>
+                    <div class="input-group_line"></div>
+                </div>
+            <button type="submit">Submit Response</button>
+            </form>
+    </div>
+</body>
+</html>

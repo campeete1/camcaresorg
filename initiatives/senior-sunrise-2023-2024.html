@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Poll - Code - Cam Cares Initiative</title>
+    <link rel="stylesheet" href="/styles/main.css">
+    <link rel="stylesheet" href="/styles/polls.css">
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <a href="/">
+                <img src="https://assets.cammy.dev/camcares/assets/care%20clover.png" class="logo">  
+            </a>
+             <nav>
+                <ul id="menuList">
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/about">About</a></li>
+                    <a href="/initiatives">
+                        <button>Iniatiatives</button>
+                    </a>
+                </ul>
+            </nav>
+            <img src="https://assets.cammy.dev/camcares/icons/menu%20bar.png" class="menu-icon" onclick="togglemenu()">
+        </div>
+        <div class="poll-format">
+            <div class="back-btn">
+            <a href="/polls">
+                <img src="/assets/arrow.svg" class="arrow"> Back
+            </a>
+        </div>
+        <h1>Random Poll </h1>
+            <script type="text/javascript"> var submitted=false</script>
+            <iframe name="hiddenConfirm" id="hiddenConfirm" style="display: none;" onload="if(submitted){window.location='/polls/submitted.html';}"></iframe>
+            <form action="https://docs.google.com/forms/d/e/1FAIpQLSec-oMlFDtHqKDw9q-nId8Y6r5Wm5AtWKt_hKt4wOZ8a52d0A/formResponse" method="POST" target="hiddenConfirm" onsubmit="submitted=true">
+            <div class="contact-information">
+                <div class="input-group">
+                    <input class="input-group_input" type="text" name="entry.1000537543" id="" placeholder="Name" required/>
+                    <div class="input-group_line"></div>
+                </div>
+                <div class="input-group">
+                    <input class="input-group_input" type="email" name="entry.1267248379" id="" placeholder="Email" required/>
+                    <div class="input-group_line"></div>
+                </div>
+            </div>
+            <div class="poll-information">
+                <span>Are you enjoying school so far?</span>
+                <label for="Yes">
+                    <input type="radio" name="entry.1236155426" id="Yes" value="Yes"/>
+                    <span>Yes</span>
+                </label>
+                <label for="No">
+                    <input type="radio" name="entry.1236155426" id="No" value="No"/>
+                    <span>No</span>
+                </label>
+            </div>
+            <button type="submit">Submit Response</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
